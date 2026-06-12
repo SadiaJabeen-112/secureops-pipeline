@@ -21,17 +21,45 @@ build agent, and full Azure Monitor observability.
 
 ## Technologies
 
-Linux — Docker — Azure DevOps — Azure VNet — NSG — Key Vault
-Managed Identity — RBAC — Azure Monitor — Bicep IaC — Trivy
+| Category | Tools |
+|----------|-------|
+| OS | Linux — RHEL · Ubuntu |
+| Containers | Docker · Nginx Alpine |
+| Cloud | Microsoft Azure |
+| Networking | VNet · NSG · Subnets · CCNA |
+| Security | Key Vault · Managed Identity · RBAC · Zero Trust |
+| CI/CD | Azure DevOps · Trivy · Approval Gates |
+| IaC | Bicep · ARM |
+| Monitoring | Azure Monitor · Log Analytics |
+
+---
 
 ## Cert Coverage
 
-AZ-900 — AZ-104 — AZ-204 — AZ-400 — CCNA — RHCSA
+| Cert | What it contributed |
+|------|-------------------|
+| AZ-900 | Cloud models · Shared responsibility |
+| AZ-104 | VNet · NSG · RBAC · Azure Monitor · VM |
+| AZ-204 | Key Vault · Managed Identity · ACI |
+| AZ-400 | Pipeline · Approval gates · IaC · Trivy |
+| CCNA | Subnet design · Routing · Network architecture |
+| RHCSA | Linux hardening · nftables · auditctl · sysctl |
+
+---
 
 ## Author
 
-Sadia Jabeen
-Cloud and DevOps Professional — Hyderabad India
+**Sadia Jabeen**
+Cloud and DevOps Professional — Hyderabad, India
 4x Microsoft Azure Certified — CCNA
-linkedin.com/in/sadiajabeen112
-sadiajabeen112.github
+
+[
+
+![LinkedIn](https://img.shields.io/badge/LinkedIn-sadiajabeen112-blue?style=flat&logo=linkedin)
+
+](https://linkedin.com/in/sadiajabeen112)
+[
+
+![Portfolio](https://img.shields.io/badge/Portfolio-sadiajabeen112.github.io-green?style=flat&logo=github)
+
+](https://sadiajabeen112.github.io)
