@@ -33,25 +33,27 @@ This is the correct Azure-native approach for AZ-204 and AZ-400.
 Zero Trust principle applied to deployments.
 No automated production deployment — human verification required every time.
 Demonstrates AZ-400 environment and approval gate configuration.
-
 ## Network Architecture
-10.0.0.0/16  — VNet
-10.0.1.0/24  — web-subnet    (container instances)
-10.0.2.0/24  — mgmt-subnet   (build agent VM)
-10.0.3.0/24  — ops-subnet    (Key Vault, Monitor)
-Three subnets with separate NSGs — defence in depth.
-No subnet communicates with another without explicit NSG allow rules.
-This mirrors real enterprise Azure network design — AZ-104 plus CCNA applied.
+
+| Subnet | CIDR | Purpose |
+|--------|------|---------|
+| VNet | 10.0.0.0/16 | Main network |
+| web-subnet | 10.0.1.0/24 | Container instances |
+| mgmt-subnet | 10.0.2.0/24 | Build agent VM |
+| ops-subnet | 10.0.3.0/24 | Key Vault and Monitor |
 
 ## Security Layers
-Layer 1 — Azure NSG          network perimeter
-Layer 2 — nftables           OS firewall
-Layer 3 — RBAC               identity and access
-Layer 4 — Key Vault          secret management
-Layer 5 — Managed Identity   passwordless auth
-Layer 6 — Trivy scan         container vulnerability check
-Layer 7 — Audit rules        activity monitoring
-Layer 8 — Azure Monitor      observability and alerting
+| Layer | Technology | Purpose |
+|-------|-----------|---------|
+| 1 | Azure NSG | Network perimeter |
+| 2 | nftables | OS firewall |
+| 3 | RBAC | Identity and access |
+| 4 | Key Vault | Secret management |
+| 5 | Managed Identity | Passwordless auth |
+| 6 | Trivy scan | Container vulnerability check |
+| 7 | Audit rules | Activity monitoring |
+| 8 | Azure Monitor | Observability and alerting |
+
 Eight distinct security layers — Zero Trust applied end to end.
 
 ## Cert Coverage
