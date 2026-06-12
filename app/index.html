@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SecureOps Pipeline — Deployed Successfully</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Inter:wght@400;600;700;800&display=swap');
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:#040810;font-family:'JetBrains Mono',monospace;color:#ccd6f6;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:20px}
+  .card{max-width:700px;width:100%;background:#0c1525;border:1px solid #112240;border-radius:12px;padding:48px;text-align:center}
+  .badge{display:inline-flex;align-items:center;gap:8px;background:rgba(34,197,94,0.1);border:1px solid rgba(34,197,94,0.3);border-radius:100px;padding:6px 18px;font-size:12px;color:#22c55e;margin-bottom:28px;letter-spacing:0.1em}
+  .dot{width:8px;height:8px;border-radius:50%;background:#22c55e;animation:pulse 2s infinite}
+  @keyframes pulse{0%,100%{opacity:1}50%{opacity:0.3}}
+  h1{font-size:36px;font-weight:800;font-family:'Inter',sans-serif;color:#e2eaf8;letter-spacing:-0.02em;margin-bottom:12px}
+  h1 span{background:linear-gradient(90deg,#3b82f6,#22d3ee);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+  .sub{font-size:14px;color:#4a5f80;line-height:1.7;margin-bottom:36px}
+  .stack{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-bottom:36px}
+  .pill{font-size:11px;padding:4px 12px;border-radius:100px;border:1px solid #112240;background:#080f1c;color:#60a5fa}
+  .pipeline{background:#080f1c;border:1px solid #112240;border-radius:8px;padding:20px;text-align:left;margin-bottom:28px}
+  .p-title{font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:#4a5f80;margin-bottom:14px}
+  .p-step{display:flex;align-items:center;gap:10px;margin-bottom:8px;font-size:12px}
+  .p-num{width:22px;height:22px;border-radius:50%;background:#1d4ed8;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;flex-shrink:0}
+  .p-text{color:#8b9fc0}
+  .p-text span{color:#22d3ee}
+  .check{color:#22c55e}
+  .footer{font-size:12px;color:#4a5f80}
+  .footer a{color:#60a5fa;text-decoration:none}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="badge"><span class="dot"></span>DEPLOYED SUCCESSFULLY</div>
+  <h1>SecureOps<br><span>Pipeline</span></h1>
+  <p class="sub">A production-grade secure CI/CD pipeline on Azure.<br>Built with Zero Trust. Deployed with confidence.</p>
+  <div class="stack">
+    <span class="pill">☁️ Azure</span>
+    <span class="pill">🐧 Linux</span>
+    <span class="pill">🐳 Docker</span>
+    <span class="pill">🌐 CCNA</span>
+    <span class="pill">⚙️ Azure DevOps</span>
+    <span class="pill">🔐 Key Vault</span>
+    <span class="pill">👤 Managed Identity</span>
+    <span class="pill">📊 Azure Monitor</span>
+  </div>
+  <div class="pipeline">
+    <div class="p-title">Pipeline Stages</div>
+    <div class="p-step"><span class="p-num">1</span><span class="p-text"><span>Build</span> — Hardened Linux Agent</span><span class="check" style="margin-left:auto">✓</span></div>
+    <div class="p-step"><span class="p-num">2</span><span class="p-text"><span>Docker Build</span> — Multi-stage image</span><span class="check" style="margin-left:auto">✓</span></div>
+    <div class="p-step"><span class="p-num">3</span><span class="p-text"><span>Security Scan</span> — Trivy vulnerability scan</span><span class="check" style="margin-left:auto">✓</span></div>
+    <div class="p-step"><span class="p-num">4</span><span class="p-text"><span>Approval Gate</span> — Manual review</span><span class="check" style="margin-left:auto">✓</span></div>
+    <div class="p-step"><span class="p-num">5</span><span class="p-text"><span>Deploy</span> — Azure Container Instance</span><span class="check" style="margin-left:auto">✓</span></div>
+  </div>
+  <p class="footer">Built by <a href="https://linkedin.com/in/sadiajabeen112">Sadia Jabeen</a> · <a href="https://sadiajabeen112.github.io">Portfolio</a> · 4x Microsoft Certified · CCNA</p>
+</div>
+</body>
+</html>
