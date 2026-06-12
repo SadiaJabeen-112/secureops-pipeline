@@ -34,4 +34,4 @@ Sadia Jabeen
 Cloud and DevOps Professional — Hyderabad India
 4x Microsoft Azure Certified — CCNA
 linkedin.com/in/sadiajabeen112
-sadiajabeen112.github.io
+sadiajabeen112.github
