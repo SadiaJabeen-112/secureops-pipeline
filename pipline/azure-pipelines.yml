@@ -27,8 +27,7 @@ variables:
   value: 'secureops-rg'
 
 pool:
-  vmImage: 'ubuntu-latest'
-
+  name: 'secureops-local-agent' 
 stages:
 
 - stage: Build
